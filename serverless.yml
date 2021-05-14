@@ -1,23 +1,28 @@
 service:
- name: sakura-backend
+  name: sakura-backend
 
 plugins:
- - 'serverless-plugin-typescript'
- - serverless-plugin-optimize
- - serverless-offline
+  - 'serverless-plugin-typescript'
+  - serverless-plugin-optimize
+  - serverless-offline
 
 provider:
- name: aws
- runtime: nodejs14.x
+  name: aws
+  runtime: nodejs14.x
 
 functions:
- main: # The name of the lambda function
-   # The module 'handler' is exported in the file 'src/lambda'
-   handler: src/lambda.handler
-   events:
-     - http:
-         method: any
-         path: /{any+}
+  main: # The name of the lambda function
+    # The module 'handler' is exported in the file 'src/lambda'
+    handler: src/lambda.handler
+    events:
+      - http:
+          method: ANY
+          path: /
+          cors: true
+      - http:
+          method: any
+          path: /{proxy+}
+          cors: true
 
 custom:
   serverless-offline:
