@@ -20,6 +20,18 @@ export class CategoryController {
         }
     }
 
+    @Get("top")
+    getTopCategories() {
+        try {
+            return this.categoryService.getTopCategories();
+        } catch (error) {
+            //TODO: Need to handle error types
+            throw new HttpException({
+                message: error.message
+            }, HttpStatus.BAD_REQUEST);
+        }
+    }
+
 
     @Get(":id")
     @ApiParam({ name: "id", required: true })

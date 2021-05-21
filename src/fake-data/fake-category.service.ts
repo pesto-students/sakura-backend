@@ -22,4 +22,9 @@ export class FakeCategoryService {
         return allProductInCategories.slice((page * limit), limit);
     }
 
+    getTopCategories() {
+        const allTopCategories = categories.filter(category => category.isTopCategory);
+        return allTopCategories;
+    }
+
 }

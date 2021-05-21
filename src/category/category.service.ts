@@ -16,4 +16,8 @@ export class CategoryService {
     getProductsByCategoryId(categoryId: number){
         return this.fakeCategoryService.getProductByCategories(categoryId);
     }
+
+    getTopCategories() {
+        return this.fakeCategoryService.getTopCategories();
+    }
 }
