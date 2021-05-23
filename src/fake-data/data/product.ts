@@ -1,4 +1,6 @@
-export const product = [
+import { convertToJsObj } from "../common";
+
+export const productsData: object[] = convertToJsObj([
     {
         "id": "1",
         "name": "Blazer",
@@ -443,4 +445,4 @@ export const product = [
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     }
-];
+]);

@@ -1,4 +1,6 @@
-export const publicAssets = [
+import { convertToJsObj } from "../common";
+
+export const publicAssetData: object[] = convertToJsObj([
     {
         "id": "1",
         "fileName": "alireza-esmaeeli-uTJtsKLeY3E-unsplash.jpg",
@@ -156,7 +158,7 @@ export const publicAssets = [
         "id": "18",
         "fileName": "ana-itonishvili-791_dkcIk4I-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/ana-itonishvili-791_dkcIk4I-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/ana-itonishvili-791_dkcIk4I-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -165,7 +167,7 @@ export const publicAssets = [
         "id": "19",
         "fileName": "ana-itonishvili-Fyl8sMC2j2Q-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/ana-itonishvili-Fyl8sMC2j2Q-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/ana-itonishvili-Fyl8sMC2j2Q-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -174,7 +176,7 @@ export const publicAssets = [
         "id": "20",
         "fileName": "ana-itonishvili-qUZh5CHcoPA-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/ana-itonishvili-qUZh5CHcoPA-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/ana-itonishvili-qUZh5CHcoPA-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -183,7 +185,7 @@ export const publicAssets = [
         "id": "21",
         "fileName": "brian-wangenheim-fDryZxOI_50-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/brian-wangenheim-fDryZxOI_50-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/brian-wangenheim-fDryZxOI_50-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -192,7 +194,7 @@ export const publicAssets = [
         "id": "22",
         "fileName": "chalo-garcia-Q1vtxAfUIrg-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/chalo-garcia-Q1vtxAfUIrg-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/chalo-garcia-Q1vtxAfUIrg-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -201,7 +203,7 @@ export const publicAssets = [
         "id": "23",
         "fileName": "hamza-nouasria-6btvzCTgZzo-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/hamza-nouasria-6btvzCTgZzo-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/hamza-nouasria-6btvzCTgZzo-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -210,7 +212,7 @@ export const publicAssets = [
         "id": "24",
         "fileName": "jakob-owens-3nCXPSkYR24-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/jakob-owens-3nCXPSkYR24-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/jakob-owens-3nCXPSkYR24-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -219,7 +221,7 @@ export const publicAssets = [
         "id": "25",
         "fileName": "khaled-ghareeb-7KKwt_BsE54-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/khaled-ghareeb-7KKwt_BsE54-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/khaled-ghareeb-7KKwt_BsE54-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -228,7 +230,7 @@ export const publicAssets = [
         "id": "26",
         "fileName": "mahdi-chaghari-lSybogEMGY8-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/mahdi-chaghari-lSybogEMGY8-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/mahdi-chaghari-lSybogEMGY8-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -237,7 +239,7 @@ export const publicAssets = [
         "id": "27",
         "fileName": "mahdi-chaghari-zvXDMZ2cILY-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/mahdi-chaghari-zvXDMZ2cILY-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/mahdi-chaghari-zvXDMZ2cILY-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -246,7 +248,7 @@ export const publicAssets = [
         "id": "28",
         "fileName": "max-titov-Mhktr6dFD3I-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/max-titov-Mhktr6dFD3I-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/max-titov-Mhktr6dFD3I-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -255,7 +257,7 @@ export const publicAssets = [
         "id": "29",
         "fileName": "mehrab-zahedbeigi-M2PfejoS8lc-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/mehrab-zahedbeigi-M2PfejoS8lc-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/mehrab-zahedbeigi-M2PfejoS8lc-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -264,7 +266,7 @@ export const publicAssets = [
         "id": "30",
         "fileName": "michele-seghieri-RbbdA_sZB6U-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/michele-seghieri-RbbdA_sZB6U-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/michele-seghieri-RbbdA_sZB6U-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -273,7 +275,7 @@ export const publicAssets = [
         "id": "31",
         "fileName": "napat-saeng-EoVzkcclFqs-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/napat-saeng-EoVzkcclFqs-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/napat-saeng-EoVzkcclFqs-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -282,7 +284,7 @@ export const publicAssets = [
         "id": "32",
         "fileName": "rendy-novantino-vjArBgig0Ic-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/rendy-novantino-vjArBgig0Ic-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/rendy-novantino-vjArBgig0Ic-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -291,7 +293,7 @@ export const publicAssets = [
         "id": "33",
         "fileName": "sonnie-hiles-jS9ZsQOQGIA-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/sonnie-hiles-jS9ZsQOQGIA-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/sonnie-hiles-jS9ZsQOQGIA-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -300,7 +302,7 @@ export const publicAssets = [
         "id": "34",
         "fileName": "szocs-viola-haUDkRNkJa8-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/szocs-viola-haUDkRNkJa8-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/szocs-viola-haUDkRNkJa8-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -309,7 +311,7 @@ export const publicAssets = [
         "id": "35",
         "fileName": "tamara-bellis-RqpHXWNHep8-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/tamara-bellis-RqpHXWNHep8-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/tamara-bellis-RqpHXWNHep8-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -318,7 +320,7 @@ export const publicAssets = [
         "id": "36",
         "fileName": "valerie-elash-T5tIoXFJfSk-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/valerie-elash-T5tIoXFJfSk-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/valerie-elash-T5tIoXFJfSk-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -327,7 +329,7 @@ export const publicAssets = [
         "id": "37",
         "fileName": "vladimir-yelizarov-2OhHpRu2Fhg-unsplash.jpg",
         "fileType": "image",
-        "uri": "https://jpages-sakura.undefined/products/images/women-collection/vladimir-yelizarov-2OhHpRu2Fhg-unsplash.jpg",
+        "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/vladimir-yelizarov-2OhHpRu2Fhg-unsplash.jpg",
         "tags": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
@@ -368,4 +370,4 @@ export const publicAssets = [
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     }
-]
+]);

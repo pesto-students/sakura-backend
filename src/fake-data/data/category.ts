@@ -1,4 +1,6 @@
-export const category = [
+import { convertToJsObj } from "../common";
+
+export const categoryData = convertToJsObj([
     {
         "id": "1",
         "parentId": "",
@@ -31,4 +33,4 @@ export const category = [
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     }
-];
+]);

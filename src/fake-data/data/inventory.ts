@@ -1,4 +1,6 @@
-export const inventory = [
+import { convertToJsObj } from "../common";
+
+export const inventoryData = convertToJsObj([
     {
       "id": "1",
       "costPrice": "1490",
@@ -332,4 +334,4 @@ export const inventory = [
       "createdOn": "20-05-2021 00:00",
       "updatedOn": "20-05-2021 00:00"
     }
-  ];
+  ]);
