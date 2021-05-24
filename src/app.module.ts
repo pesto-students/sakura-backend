@@ -14,7 +14,7 @@ const mysqlDbConfig: TypeOrmModuleOptions = {
   username: DB_USER,
   password: DB_PASS,
   database: DB_NAME,
-  entities: ["src/models/**/*.entity{.ts,.js}"],
+  entities: ["src/entity/**/*.entity{.ts,.js}"],
   synchronize: false,
 };
 @Module({
