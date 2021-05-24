@@ -3,7 +3,7 @@ import { LoggerModel } from "../logger.model";
 
 
 @Entity("product_asset")
-export class User {
+export class ProductAsset {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 

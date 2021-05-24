@@ -1,16 +1,17 @@
+import { convertDateTimeToSqlFormat } from "src/utils/time.util";
 import { Column } from "typeorm";
 
 export class LoggerModel {
 
-    @Column({type: "datetime"})
+    @Column({ type: "timestamp", default: () => convertDateTimeToSqlFormat() })
     createdOn: string;
 
-    @Column({type: "datetime"})
+    @Column({ type: "datetime", default: () => convertDateTimeToSqlFormat() })
     updatedOn: string;
 
-    @Column()
+    @Column({ type: "int", unsigned: true })
     createdBy: number;
 
-    @Column()
+    @Column({ type: "int", unsigned: true })
     updatedBy: number;
-} 
+}

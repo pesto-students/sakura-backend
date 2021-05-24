@@ -8,7 +8,7 @@ export enum ProductStatusEnum {
 }
 
 @Entity("product")
-export class User {
+export class Product {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 

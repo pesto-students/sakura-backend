@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { FakeDataModule } from './fake-data/fake-data.module';
-import { ProductModule } from './product/product.module';
-import { CategoryModule } from './category/category.module';
-import { CampaignModule } from './campaign/campaign.module'; 1
-import { EventPromoModule } from './event-promo/event-promo.module';
+import { FakeDataModule } from './resources/fake-data/fake-data.module';
+import { ProductModule } from './resources/product/product.module';
+import { CategoryModule } from './resources/category/category.module';
+import { CampaignModule } from './resources/campaign/campaign.module'; 1
+import { EventPromoModule } from './resources/event-promo/event-promo.module';
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { DB_HOST, DB_NAME, DB_PASS, DB_PORT, DB_USER } from './env';
 

@@ -9,7 +9,7 @@ export enum FileTypeEnum {
 
 
 @Entity("public_asset")
-export class User {
+export class PublicAsset {
   @PrimaryGeneratedColumn({ type: "int", unsigned: true })
   id: number;
 

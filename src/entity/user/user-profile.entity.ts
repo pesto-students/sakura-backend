@@ -8,7 +8,7 @@ export enum UserGenderEnum {
 }
 
 @Entity("user_profile")
-export class User {
+export class UserProfile {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 

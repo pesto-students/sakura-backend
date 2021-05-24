@@ -1,9 +1,9 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
 
 
 @Entity("city")
-export class User {
+export class City {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
@@ -12,6 +12,8 @@ export class User {
 
     @Column({ type: "int", unsigned: true })
     stateId: number;
+
+    @ManyToOne(() => State)
 
     @Column(type => LoggerModel)
     logger: LoggerModel;

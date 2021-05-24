@@ -33,6 +33,7 @@
     "class-transformer": "^0.4.0",
     "class-validator": "^0.13.1",
     "dotenv": "^9.0.2",
+    "moment": "^2.29.1",
     "mysql2": "^2.2.5",
     "object-mapper": "^6.2.0",
     "reflect-metadata": "^0.1.13",

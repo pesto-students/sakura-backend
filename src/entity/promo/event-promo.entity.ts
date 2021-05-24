@@ -13,7 +13,7 @@ export enum EventPromoStatusEnum {
 }
 
 @Entity("event_promo")
-export class User {
+export class EventPromo {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 

@@ -3,7 +3,7 @@ import { LoggerModel } from "../logger.model";
 
 
 @Entity("state")
-export class User {
+export class State {
     @PrimaryGeneratedColumn()
     id: number;
 

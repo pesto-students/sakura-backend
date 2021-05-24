@@ -8,7 +8,7 @@ export enum FavoriteStatusEnum {
 
 
 @Entity("favorite")
-export class User {
+export class Favorite {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
