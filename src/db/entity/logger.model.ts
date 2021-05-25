@@ -1,4 +1,4 @@
-import { convertDateTimeToSqlFormat } from "../utils/time.util";
+import { convertDateTimeToSqlFormat } from "../../utils/time.util";
 import { Column, JoinColumn, ManyToOne } from "typeorm";
 import { AppUser } from "./user/user.entity";
 
