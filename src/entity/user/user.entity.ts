@@ -1,6 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, ManyToOne, JoinColumn, OneToMany } from 'typeorm';
 import { LoggerModel } from '../logger.model';
 import { Cart } from '../order/cart.entity';
+import { Favorite } from '../product/favorite.entity';
 import { AppRole } from './role.entity';
 
 @Entity("app_user")
@@ -26,6 +27,9 @@ export class AppUser {
 
   @OneToMany(() => Cart, cart => cart.user)
   carts: Cart[];
+
+  @OneToMany(() => Favorite, favorite => favorite.user)
+  favorites: Favorite[];
 
   @Column(type => LoggerModel)
   logger: LoggerModel;

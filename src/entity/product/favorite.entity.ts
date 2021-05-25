@@ -1,5 +1,6 @@
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
+import { AppUser } from "../user/user.entity";
 import { Product } from "./product.entity";
 
 export enum FavoriteStatusEnum {
@@ -12,6 +13,13 @@ export enum FavoriteStatusEnum {
 export class Favorite {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
+
+    @Column({ type: "int", unsigned: true })
+    userId: number;
+
+    @ManyToOne(() => AppUser, user => user.favorites)
+    @JoinColumn({name: "userId"})
+    user: AppUser;
 
     @Column({ type: "int", unsigned: true })
     productId: number;
