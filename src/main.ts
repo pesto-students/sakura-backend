@@ -5,11 +5,13 @@ import { HttpExceptionFilter } from './http-exception.filter';
 import { TransformInterceptor } from './transform.interceptor';
 import { ValidationPipe } from '@nestjs/common';
 import { APP_PORT } from "../env";
+import { SeederModule } from './db/seeder/seeder.module';
+import { SeederService } from './db/seeder/services/seeder.service';
 
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  
+
   app.enableCors();
   app.useGlobalPipes(
     new ValidationPipe({
@@ -20,17 +22,19 @@ async function bootstrap() {
   app.useGlobalInterceptors(new TransformInterceptor());
 
   const config = new DocumentBuilder()
-  .setTitle('Sakura WebStore')
-  .setDescription('The Sakura WebStore Backend APIs are described below')
-  .setVersion('1.0')
-  .addTag('sakura')
-  .build();
+    .setTitle('Sakura WebStore')
+    .setDescription('The Sakura WebStore Backend APIs are described below')
+    .setVersion('1.0')
+    .addTag('sakura')
+    .build();
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api-docs', app, document);
 
+
   console.log(`Server listening on port ${APP_PORT}`);
   await app.listen(APP_PORT || 3000);
+
 }
 
 bootstrap();

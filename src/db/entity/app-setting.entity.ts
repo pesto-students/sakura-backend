@@ -7,7 +7,7 @@ export enum AppSettingKey {
 }
 
 @Entity("app_setting")
-export class AppSetting {
+export class AppSetting<T extends AppSettingType> {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
@@ -15,14 +15,14 @@ export class AppSetting {
     key: string;
 
     @Column("simple-json")
-    value: { data: AppSettingVal, other: any }
+    value: T;
 
     @Column(type => LoggerModel)
     logger: LoggerModel;
 }
 
 
-export type AppSettingVal = SeedState | PasswordEncryptKey;
+export type AppSettingType = SeedState | PasswordEncryptKey;
 
-export type SeedState = { isSeeded: boolean, other: null };
-export type PasswordEncryptKey = { encryptionKey: string, other: null };
+export type SeedState = { isSeeded: boolean };
+export type PasswordEncryptKey = { encryptionKey: string };

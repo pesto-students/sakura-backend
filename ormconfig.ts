@@ -9,10 +9,10 @@ const ormConfig = {
     "username": DB_USER || "no db user provided",
     "password": DB_PASS || "no db pass provided",
     "database": DB_NAME || "no db name provided",
-    "entities": ["./src/db/entity/**/*.entity{.ts,.js}"],
-    "migrations": ["./src/db/migrations/*{.ts, .js}"],
+    "entities": [resolve(__dirname, "src", "db", "entity", "**/*.entity{.ts,.js}")],
+    "migrations": [resolve(__dirname, "src", "db", "migrations", "*{.ts, .js}")],
     "cli": {
-        "migrationsDir": "src/db/migrations",
+        "migrationsDir": resolve(__dirname, "src", "db", "migrations"),
     }
 }
 

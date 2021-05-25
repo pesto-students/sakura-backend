@@ -5,12 +5,13 @@ import { CategoryModule } from './resources/category/category.module';
 import { CampaignModule } from './resources/campaign/campaign.module'; 1
 import { EventPromoModule } from './resources/event-promo/event-promo.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import  ormConfig from "../ormconfig";
+import ormConfig from "../ormconfig";
+import { SeederModule } from './db/seeder/seeder.module';
 @Module({
-  imports: [FakeDataModule, ProductModule, CategoryModule, 
-            CampaignModule, EventPromoModule, 
-            TypeOrmModule.forRoot(ormConfig as any)
-          ],
+  imports: [FakeDataModule, ProductModule, CategoryModule,
+    CampaignModule, EventPromoModule, SeederModule,
+    TypeOrmModule.forRoot(ormConfig as any)
+  ],
   controllers: [],
   providers: [],
 })
