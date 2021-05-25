@@ -1,5 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
+import { Cart } from "./cart.entity";
 
 
 export enum PaymentTypeEnum {
@@ -15,12 +16,16 @@ export enum PaymentStatusEnum {
 }
 
 @Entity("order")
-export class User {
+export class Order {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
     @Column({ type: "int", unsigned: true })
     cartId: number;
+
+    @OneToOne(() => Cart, cart => cart.order)
+    @JoinColumn({name: "cartId"})
+    cart: Cart;
 
     @Column({ type: "int", unsigned: true })
     userId: number;

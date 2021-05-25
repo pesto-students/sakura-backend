@@ -1,5 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
+import { City } from "./city.entity";
 
 
 @Entity("state")
@@ -12,6 +13,9 @@ export class State {
 
     @Column({type: "varchar", length: 5})
     abbreveation: number;
+
+    @OneToMany(() => City, city => city.state)
+    cities: City[];
 
     @Column(type => LoggerModel)
     logger: LoggerModel;

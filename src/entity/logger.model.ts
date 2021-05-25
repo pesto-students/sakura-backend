@@ -1,5 +1,6 @@
 import { convertDateTimeToSqlFormat } from "src/utils/time.util";
-import { Column } from "typeorm";
+import { Column, JoinColumn, ManyToOne } from "typeorm";
+import { User } from "./user/user.entity";
 
 export class LoggerModel {
 
@@ -10,7 +11,11 @@ export class LoggerModel {
     updatedOn: string;
 
     @Column({ type: "int", unsigned: true })
-    createdBy: number;
+    createdById: number;
+
+    @ManyToOne(() => User)
+    @JoinColumn({name: "createdById"})
+    createdBy: User;
 
     @Column({ type: "int", unsigned: true })
     updatedBy: number;

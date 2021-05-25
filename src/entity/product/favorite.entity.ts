@@ -1,5 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
+import { Product } from "./product.entity";
 
 export enum FavoriteStatusEnum {
     active = "active",
@@ -14,6 +15,10 @@ export class Favorite {
 
     @Column({ type: "int", unsigned: true })
     productId: number;
+
+    @ManyToOne(() => Product, product => product.favorites)
+    @JoinColumn({name: "productId"})
+    product: Product;
 
     @Column({type: "enum", enum: FavoriteStatusEnum, default: FavoriteStatusEnum.active})
     status: FavoriteStatusEnum;

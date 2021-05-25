@@ -1,5 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
+import { ProductClass } from "./product-class.entity";
 
 export enum ReviewStatusEnum {
     active = "active",
@@ -12,19 +13,23 @@ export class Review {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
-    @Column({type: "varchar", length: 50 })
+    @Column({ type: "varchar", length: 50 })
     name: string;
 
-    @Column({type: "varchar", length: 500 })
+    @Column({ type: "varchar", length: 500 })
     description: string;
 
-    @Column({type: "tinyint", unsigned: true })
+    @Column({ type: "tinyint", unsigned: true })
     rating: number;
 
     @Column({ type: "int", unsigned: true })
     productClassId: number;
 
-    @Column({type: "enum", enum: ReviewStatusEnum, default: ReviewStatusEnum.active})
+    @ManyToOne(() => ProductClass, productClass => productClass.reviews)
+    @JoinColumn({ name: "productClassId" })
+    productClass: ProductClass;
+
+    @Column({ type: "enum", enum: ReviewStatusEnum, default: ReviewStatusEnum.active })
     status: ReviewStatusEnum;
 
     @Column(type => LoggerModel)

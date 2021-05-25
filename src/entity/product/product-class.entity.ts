@@ -1,5 +1,8 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
+import { Product } from "./product.entity";
+import { Review } from "./review.entity";
+import { SubCategory } from "./sub-category.entity";
 
 
 export enum ProductClassStatusEnum {
@@ -25,12 +28,19 @@ export class ProductClass {
     rating: number;
 
     @Column({ type: "int", unsigned: true })
-    categoryId: number;
-
-    @Column({ type: "int", unsigned: true })
     subCategoryId: number;
 
-    @Column({type: "enum", enum: ProductClassStatusEnum })
+    @ManyToOne(() => SubCategory, subCategory => subCategory.productClasses)
+    @JoinColumn({ name: "subCategoryId" })
+    subCategory: SubCategory;
+
+    @OneToMany(() => Product, product => product.productClass)
+    products: Product[];
+
+    @OneToMany(() => Review, review => review.productClass)
+    reviews: Review[];
+
+    @Column({ type: "enum", enum: ProductClassStatusEnum })
     status: ProductClassStatusEnum;
 
     @Column(type => LoggerModel)

@@ -1,5 +1,9 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
+import { Favorite } from "./favorite.entity";
+import { Inventory } from "./inventory.entity";
+import { ProductAsset } from "./product-asset.entity";
+import { ProductClass } from "./product-class.entity";
 
 
 export enum ProductStatusEnum {
@@ -33,8 +37,22 @@ export class Product {
     @Column({ type: "int", unsigned: true })
     productClassId: number;
 
+    @ManyToOne(() => ProductClass, productClass => productClass.products)
+    @JoinColumn({ name: "productClassId" })
+    productClass: ProductClass;
+
     @Column({ type: "int", unsigned: true })
     inventoryId: number;
+
+    @OneToOne(() => Inventory)
+    @JoinColumn({ name: "inventoryId" })
+    inventory: Inventory;
+
+    @OneToMany(() => Favorite, favorite => favorite.product)
+    favorites: Favorite[];
+
+    @OneToMany(() => ProductAsset, asset => asset.product)
+    productAssets: ProductAsset[];
 
     @Column(type => LoggerModel)
     logger: LoggerModel;
