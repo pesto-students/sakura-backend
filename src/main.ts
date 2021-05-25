@@ -4,7 +4,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { HttpExceptionFilter } from './http-exception.filter';
 import { TransformInterceptor } from './transform.interceptor';
 import { ValidationPipe } from '@nestjs/common';
-import { APP_PORT } from "./env";
+import { APP_PORT } from "../env";
 
 
 async function bootstrap() {

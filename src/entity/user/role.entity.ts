@@ -7,8 +7,8 @@ export enum RoleNameEnum {
     customer = "customer"
 }
 
-@Entity("role")
-export class Role {
+@Entity("app_role")
+export class AppRole {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 

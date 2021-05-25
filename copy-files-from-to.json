@@ -3,6 +3,18 @@
         {
             "from": "env/*.env",
             "to": ".build/env/"
+        },
+        {
+            "from": "package.json",
+            "to": ".build/package.json"
+        },
+        {
+            "from": "serverless.yml",
+            "to": ".build/serverless.yml"
+        },
+        {
+            "from": "ecosystem.config.js",
+            "to": ".build/ecosystem.config.js"
         }
     ]
 }

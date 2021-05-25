@@ -2,7 +2,7 @@ import { Column, Entity, JoinColumn, ManyToOne, OneToOne, PrimaryGeneratedColumn
 import { LoggerModel } from "../logger.model";
 import { City } from "../place/city.entity";
 import { PublicAsset } from "../public-assets.entity";
-import { User } from "./user.entity";
+import { AppUser } from "./user.entity";
 
 
 export enum UserGenderEnum {
@@ -18,9 +18,9 @@ export class UserProfile {
     @Column({ type: "int", unsigned: true })
     userId: number;
 
-    @OneToOne(() => User)
+    @OneToOne(() => AppUser)
     @JoinColumn({name: "userId"})
-    user: User;
+    user: AppUser;
 
     @Column()
     firstName: string;

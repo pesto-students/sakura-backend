@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { FakeEventPromoService } from 'src/fake-data/fake-event-promo.service';
+import { FakeEventPromoService } from '../fake-data/fake-event-promo.service';
 
 @Injectable()
 export class EventPromoService {

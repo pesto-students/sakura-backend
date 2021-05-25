@@ -5,7 +5,7 @@ import { City } from "./city.entity";
 
 @Entity("state")
 export class State {
-    @PrimaryGeneratedColumn()
+    @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
     @Column({type: "varchar", length: 30})

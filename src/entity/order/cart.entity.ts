@@ -1,6 +1,6 @@
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
-import { User } from "../user/user.entity";
+import { AppUser } from "../user/user.entity";
 import { CartItem } from "./cart-item.entity";
 import { Order } from "./order.entity";
 
@@ -18,9 +18,9 @@ export class Cart {
     @Column({ type: "int", unsigned: true })
     userId: number;
 
-    @ManyToOne(() => User)
+    @ManyToOne(() => AppUser)
     @JoinColumn({name: "userId"})
-    user: User;
+    user: AppUser;
 
     @Column({type: "enum", enum: CartStatusEnum, default: CartStatusEnum.active})
     status: CartStatusEnum;

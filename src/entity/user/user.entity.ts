@@ -1,10 +1,10 @@
 import { Entity, Column, PrimaryGeneratedColumn, ManyToOne, JoinColumn, OneToMany } from 'typeorm';
 import { LoggerModel } from '../logger.model';
 import { Cart } from '../order/cart.entity';
-import { Role } from './role.entity';
+import { AppRole } from './role.entity';
 
-@Entity("user")
-export class User {
+@Entity("app_user")
+export class AppUser {
   @PrimaryGeneratedColumn({ type: "int", unsigned: true })
   id: number;
 
@@ -17,9 +17,9 @@ export class User {
   @Column({ type: "int", unsigned: true })
   roleId: number;
 
-  @ManyToOne(() => Role)
+  @ManyToOne(() => AppRole)
   @JoinColumn({ name: "roleId" })
-  role: Role;
+  role: AppRole;
 
   @Column({ default: false })
   accountVerified: boolean;
