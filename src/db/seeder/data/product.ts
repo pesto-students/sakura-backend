@@ -1,6 +1,6 @@
-import { convertToJsObj } from "../common";
+import { convertToJsObj } from "./common";
 
-export const productsData: object[] = convertToJsObj([
+export const productsData: any[] = convertToJsObj([
     {
         "id": "1",
         "name": "Blazer",
@@ -10,6 +10,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "1",
         "otherAttributes": "",
         "inventoryId": "1",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -22,6 +23,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "1",
         "otherAttributes": "",
         "inventoryId": "2",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -34,6 +36,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "1",
         "otherAttributes": "",
         "inventoryId": "3",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -46,6 +49,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "2",
         "otherAttributes": "",
         "inventoryId": "4",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -58,6 +62,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "1",
         "otherAttributes": "",
         "inventoryId": "5",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -70,6 +75,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "3",
         "otherAttributes": "",
         "inventoryId": "6",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -82,6 +88,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "4",
         "otherAttributes": "",
         "inventoryId": "7",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -94,6 +101,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "5",
         "otherAttributes": "",
         "inventoryId": "8",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -106,6 +114,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "6",
         "otherAttributes": "",
         "inventoryId": "9",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -118,6 +127,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "1",
         "otherAttributes": "",
         "inventoryId": "10",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -130,6 +140,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "1",
         "otherAttributes": "",
         "inventoryId": "11",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -142,6 +153,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "1",
         "otherAttributes": "",
         "inventoryId": "12",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -154,6 +166,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "7",
         "otherAttributes": "",
         "inventoryId": "13",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -166,6 +179,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "8",
         "otherAttributes": "",
         "inventoryId": "14",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -178,6 +192,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "9",
         "otherAttributes": "",
         "inventoryId": "15",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -190,6 +205,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "10",
         "otherAttributes": "",
         "inventoryId": "16",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -202,6 +218,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "11",
         "otherAttributes": "",
         "inventoryId": "17",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -214,6 +231,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "12",
         "otherAttributes": "",
         "inventoryId": "18",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -226,6 +244,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "12",
         "otherAttributes": "",
         "inventoryId": "19",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -238,6 +257,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "13",
         "otherAttributes": "",
         "inventoryId": "20",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -250,6 +270,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "14",
         "otherAttributes": "",
         "inventoryId": "21",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -262,6 +283,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "15",
         "otherAttributes": "",
         "inventoryId": "22",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -274,6 +296,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "16",
         "otherAttributes": "",
         "inventoryId": "23",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -286,6 +309,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "17",
         "otherAttributes": "",
         "inventoryId": "24",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -298,6 +322,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "18",
         "otherAttributes": "",
         "inventoryId": "25",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -310,6 +335,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "19",
         "otherAttributes": "",
         "inventoryId": "26",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -322,6 +348,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "20",
         "otherAttributes": "",
         "inventoryId": "27",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -334,6 +361,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "21",
         "otherAttributes": "",
         "inventoryId": "28",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -346,6 +374,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "22",
         "otherAttributes": "",
         "inventoryId": "29",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -358,6 +387,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "23",
         "otherAttributes": "",
         "inventoryId": "30",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -370,6 +400,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "24",
         "otherAttributes": "",
         "inventoryId": "31",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -382,6 +413,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "24",
         "otherAttributes": "",
         "inventoryId": "32",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -394,6 +426,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "19",
         "otherAttributes": "",
         "inventoryId": "33",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -406,6 +439,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "24",
         "otherAttributes": "",
         "inventoryId": "34",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -418,6 +452,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "25",
         "otherAttributes": "",
         "inventoryId": "35",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -430,6 +465,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "12",
         "otherAttributes": "",
         "inventoryId": "36",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -442,6 +478,7 @@ export const productsData: object[] = convertToJsObj([
         "productClassId": "24",
         "otherAttributes": "",
         "inventoryId": "37",
+        "status": "active",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     }

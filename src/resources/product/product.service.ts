@@ -1,16 +1,15 @@
 import { Injectable } from '@nestjs/common';
-import { FakeProductService } from '../fake-data/fake-product.service';
 
 @Injectable()
 export class ProductService {
 
-    constructor(private fakeProductService: FakeProductService){}
-    
+    constructor() { }
+
     getProducts(page: number, limit: number, all: boolean) {
-        return this.fakeProductService.getProducts(page, limit, all);
+        // return this.fakeProductService.getProducts(page, limit, all);
     }
 
     getProductById(productId: number) {
-        return this.fakeProductService.getProductById(productId);
+        // return this.fakeProductService.getProductById(productId);
     }
 }

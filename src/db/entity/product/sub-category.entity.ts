@@ -16,14 +16,14 @@ export class SubCategory {
     @ManyToOne(() => Category, category => category.subCategories)
     category: Category;
 
-    @OneToMany(() => ProductClass, productClass => productClass.subCategory)
-    productClasses: ProductClass[];
-
     @Column({ type: "varchar", length: 80 })
     name: string;
 
     @Column({ type: "varchar", length: 150 })
     description: string;
+
+    @OneToMany(() => ProductClass, productClass => productClass.subCategory)
+    productClasses: ProductClass[];
 
     @Column(type => LoggerModel)
     logger: LoggerModel;

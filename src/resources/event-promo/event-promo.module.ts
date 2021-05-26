@@ -1,11 +1,10 @@
 import { Module } from '@nestjs/common';
-import { FakeDataModule } from '../fake-data/fake-data.module';
 import { EventPromoController } from './event-promo.controller';
 import { EventPromoService } from './event-promo.service';
 
 @Module({
   controllers: [EventPromoController],
   providers: [EventPromoService],
-  imports: [FakeDataModule]
+  imports: []
 })
-export class EventPromoModule {}
+export class EventPromoModule { }

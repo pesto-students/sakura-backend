@@ -1,4 +1,4 @@
-import { convertToJsObj } from "../common";
+import { convertToJsObj } from "./common";
 
 export const eventPromoData: object[] = convertToJsObj([
   {

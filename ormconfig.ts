@@ -1,5 +1,5 @@
 import { DB_HOST, DB_PORT, DB_USER, DB_PASS, DB_NAME } from "./env";
-import { resolve } from "path";
+import { join, resolve } from "path";
 
 
 const ormConfig = {
@@ -9,11 +9,12 @@ const ormConfig = {
     "username": DB_USER || "no db user provided",
     "password": DB_PASS || "no db pass provided",
     "database": DB_NAME || "no db name provided",
-    "entities": [resolve(__dirname, "src", "db", "entity", "**/*.entity{.ts,.js}")],
-    "migrations": [resolve(__dirname, "src", "db", "migrations", "*{.ts, .js}")],
+    "entities": [join("src", "db", "entity", "**/*.entity{.ts,.js}")],
+    "migrations": [join("src", "db", "migrations", "*{.ts, .js}")],
     "cli": {
-        "migrationsDir": resolve(__dirname, "src", "db", "migrations"),
-    }
+        "migrationsDir": join("src", "db", "migrations"),
+    },
+    "synchronize": false
 }
 
 export default ormConfig;

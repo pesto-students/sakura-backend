@@ -1,12 +1,12 @@
-import { convertToJsObj } from "../common";
+import { convertToJsObj } from "./common";
 
-export const publicAssetData: object[] = convertToJsObj([
+export const publicAssetData: any[] = convertToJsObj([
     {
         "id": "1",
         "fileName": "alireza-esmaeeli-uTJtsKLeY3E-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/alireza-esmaeeli-uTJtsKLeY3E-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -15,7 +15,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "austin-wade-d2s8NQ6WD24-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/austin-wade-d2s8NQ6WD24-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -24,7 +24,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "clem-onojeghuo-7a6ptA97LXA-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/clem-onojeghuo-7a6ptA97LXA-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -33,7 +33,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "clem-onojeghuo-GUTUCKSU1jU-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/clem-onojeghuo-GUTUCKSU1jU-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -42,7 +42,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "dami-adebayo-k6aQzmIbR1s-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/dami-adebayo-k6aQzmIbR1s-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -51,7 +51,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "fares-hamouche-0qv78X-Yy_o-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/fares-hamouche-0qv78X-Yy_o-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -60,7 +60,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "hls-44-rkBktp5Cg_U-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/hls-44-rkBktp5Cg_U-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -69,7 +69,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "ilya-gorborukov-syx5GyrkeZ8-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/ilya-gorborukov-syx5GyrkeZ8-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -78,7 +78,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "isaac-ramirez-UNSj7BtOK0Q-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/isaac-ramirez-UNSj7BtOK0Q-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -87,7 +87,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "javier-reyes-qi2cD5oR_fE-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/javier-reyes-qi2cD5oR_fE-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -96,7 +96,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "mohamad-khosravi--eb0moHDPBI-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/mohamad-khosravi--eb0moHDPBI-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -105,7 +105,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "mohamad-khosravi-YGJ9vfuwyUg-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/mohamad-khosravi-YGJ9vfuwyUg-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -114,7 +114,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "mohamad-khosravi-YP9DYK6j5cM-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/mohamad-khosravi-YP9DYK6j5cM-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -123,7 +123,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "tyler-nix-6UEyVsw_1lU-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/tyler-nix-6UEyVsw_1lU-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -132,7 +132,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "tyler-nix-BQrxXytYaHI-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/tyler-nix-BQrxXytYaHI-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -141,7 +141,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "tyler-nix-Zhh3WM2ko3s-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/tyler-nix-Zhh3WM2ko3s-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -150,7 +150,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "tyrell-james-Uv27j6G-QRg-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/men-collection/tyrell-james-Uv27j6G-QRg-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -159,7 +159,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "ana-itonishvili-791_dkcIk4I-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/ana-itonishvili-791_dkcIk4I-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -168,7 +168,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "ana-itonishvili-Fyl8sMC2j2Q-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/ana-itonishvili-Fyl8sMC2j2Q-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -177,7 +177,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "ana-itonishvili-qUZh5CHcoPA-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/ana-itonishvili-qUZh5CHcoPA-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -186,7 +186,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "brian-wangenheim-fDryZxOI_50-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/brian-wangenheim-fDryZxOI_50-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -195,7 +195,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "chalo-garcia-Q1vtxAfUIrg-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/chalo-garcia-Q1vtxAfUIrg-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -204,7 +204,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "hamza-nouasria-6btvzCTgZzo-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/hamza-nouasria-6btvzCTgZzo-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -213,7 +213,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "jakob-owens-3nCXPSkYR24-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/jakob-owens-3nCXPSkYR24-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -222,7 +222,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "khaled-ghareeb-7KKwt_BsE54-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/khaled-ghareeb-7KKwt_BsE54-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -231,7 +231,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "mahdi-chaghari-lSybogEMGY8-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/mahdi-chaghari-lSybogEMGY8-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -240,7 +240,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "mahdi-chaghari-zvXDMZ2cILY-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/mahdi-chaghari-zvXDMZ2cILY-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -249,7 +249,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "max-titov-Mhktr6dFD3I-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/max-titov-Mhktr6dFD3I-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -258,7 +258,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "mehrab-zahedbeigi-M2PfejoS8lc-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/mehrab-zahedbeigi-M2PfejoS8lc-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -267,7 +267,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "michele-seghieri-RbbdA_sZB6U-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/michele-seghieri-RbbdA_sZB6U-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -276,7 +276,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "napat-saeng-EoVzkcclFqs-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/napat-saeng-EoVzkcclFqs-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -285,7 +285,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "rendy-novantino-vjArBgig0Ic-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/rendy-novantino-vjArBgig0Ic-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -294,7 +294,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "sonnie-hiles-jS9ZsQOQGIA-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/sonnie-hiles-jS9ZsQOQGIA-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -303,7 +303,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "szocs-viola-haUDkRNkJa8-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/szocs-viola-haUDkRNkJa8-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -312,7 +312,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "tamara-bellis-RqpHXWNHep8-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/tamara-bellis-RqpHXWNHep8-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -321,7 +321,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "valerie-elash-T5tIoXFJfSk-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/valerie-elash-T5tIoXFJfSk-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -330,7 +330,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "vladimir-yelizarov-2OhHpRu2Fhg-unsplash.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/products/images/women-collection/vladimir-yelizarov-2OhHpRu2Fhg-unsplash.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -339,7 +339,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "banner1.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/campaigns/may21/banner1.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -348,7 +348,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "banner2.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/campaigns/may21/banner2.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -357,7 +357,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "banner3.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/campaigns/may21/banner3.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     },
@@ -366,7 +366,7 @@ export const publicAssetData: object[] = convertToJsObj([
         "fileName": "banner4.jpg",
         "fileType": "image",
         "uri": "https://jpages-sakura.s3.ap-south-1.amazonaws.com/campaigns/may21/banner4.jpg",
-        "tags": "",
+        "attributes": "",
         "createdOn": "20-05-2021 00:00",
         "updatedOn": "20-05-2021 00:00"
     }

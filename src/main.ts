@@ -5,8 +5,6 @@ import { HttpExceptionFilter } from './http-exception.filter';
 import { TransformInterceptor } from './transform.interceptor';
 import { ValidationPipe } from '@nestjs/common';
 import { APP_PORT } from "../env";
-import { SeederModule } from './db/seeder/seeder.module';
-import { SeederService } from './db/seeder/services/seeder.service';
 
 
 async function bootstrap() {

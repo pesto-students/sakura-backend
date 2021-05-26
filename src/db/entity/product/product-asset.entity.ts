@@ -19,14 +19,14 @@ export class ProductAsset {
     productId: number;
 
     @ManyToOne(() => Product, product => product.productAssets)
-    @JoinColumn({name: "productId"})
+    @JoinColumn({ name: "productId" })
     product: Product;
 
     @Column({ type: "int", unsigned: true })
     assetId: number;
 
     @OneToOne(() => PublicAsset)
-    @JoinColumn({name: "assetId"})
+    @JoinColumn({ name: "assetId" })
     publicAsset: PublicAsset;
 
     @Column("boolean")

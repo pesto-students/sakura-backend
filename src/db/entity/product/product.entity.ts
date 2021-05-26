@@ -16,10 +16,10 @@ export class Product {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
-    @Column({ type: "varchar", length: 30 })
+    @Column({ type: "varchar", length: 200 })
     name: string;
 
-    @Column({ type: "varchar", length: 500 })
+    @Column({ type: "varchar", length: 2000 })
     description: string;
 
     @Column({ type: "varchar", length: 10 })
