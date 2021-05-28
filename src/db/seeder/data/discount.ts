@@ -1,6 +1,6 @@
 import { convertToJsObj } from "./common";
 
-export const discountData: object[] = convertToJsObj([
+export const discountData: any[] = convertToJsObj([
   {
     "id": "1",
     "name": "womens day discount",

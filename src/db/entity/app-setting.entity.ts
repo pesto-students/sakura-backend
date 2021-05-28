@@ -7,7 +7,7 @@ export enum AppSettingKey {
 }
 
 @Entity("app_setting")
-export class AppSetting<T extends AppSettingType> {
+export class AppSetting {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
@@ -15,7 +15,7 @@ export class AppSetting<T extends AppSettingType> {
     key: string;
 
     @Column("simple-json")
-    value: T;
+    value: AppSettingType;
 
     @Column(type => LoggerModel)
     logger: LoggerModel;

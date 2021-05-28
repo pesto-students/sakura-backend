@@ -12,25 +12,25 @@ export class Discount {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
-    @Column({type: "varchar", length: 20})
+    @Column({ type: "varchar", length: 20 })
     name: string;
 
-    @Column({type: "varchar", length: 10})
+    @Column({ type: "varchar", length: 10 })
     coupon: string;
 
-    @Column({type: "varchar", length: 150})
+    @Column({ type: "varchar", length: 150 })
     description: string;
 
-    @Column({type: "enum", enum: DiscountStatusEnum, default: DiscountStatusEnum.active})
+    @Column({ type: "enum", enum: DiscountStatusEnum, default: DiscountStatusEnum.active })
     status: DiscountStatusEnum;
 
-    @Column({type: "decimal", precision: 5, scale: 2, unsigned: true})
+    @Column({ type: "decimal", precision: 5, scale: 2, unsigned: true })
     discountRate: number;
 
-    @Column({type: "decimal", precision: 10, scale: 2, unsigned: true})
+    @Column({ type: "int", unsigned: true })
     minimumOrderValue: number;
 
-    @Column({type: "int", unsigned: true})
+    @Column({ type: "int", unsigned: true })
     minimumOrderQuantity: number;
 
     @Column(type => LoggerModel)

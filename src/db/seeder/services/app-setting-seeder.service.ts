@@ -8,7 +8,7 @@ import * as randomstring from "randomstring";
 export class AppSettingSeederService {
     constructor(
         @InjectRepository(AppSetting)
-        private appSettingRepository: Repository<AppSetting<AppSettingType>>,
+        private appSettingRepository: Repository<AppSetting>,
     ) { }
 
     async isDbSeeded(): Promise<boolean> {
@@ -20,11 +20,11 @@ export class AppSettingSeederService {
 
     async setPasswordEncryptionKey() {
         try {
-            const passwordEncKey = new AppSetting<PasswordEncryptKey>();
+            const passwordEncKey = new AppSetting();
             passwordEncKey.key = AppSettingKey.PWD_ENCRYPT_KEY;
             passwordEncKey.value = {
                 encryptionKey: randomstring.generate(10)
-            }
+            } as PasswordEncryptKey;
             this.appSettingRepository.save(passwordEncKey);
             return true;
         } catch (error) {
@@ -35,11 +35,11 @@ export class AppSettingSeederService {
 
     async setSeeded(): Promise<boolean> {
         try {
-            const seedState = new AppSetting<SeedState>();
+            const seedState = new AppSetting();
             seedState.key = AppSettingKey.SEED_STATE;
             seedState.value = {
                 isSeeded: true
-            }
+            } as SeedState;
             this.appSettingRepository.save(seedState);
             return true;
         } catch (error) {

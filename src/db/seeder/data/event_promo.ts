@@ -1,12 +1,13 @@
 import { convertToJsObj } from "./common";
 
-export const eventPromoData: object[] = convertToJsObj([
+export const eventPromoData: any[] = convertToJsObj([
   {
     "id": "1",
     "name": "Summer Sale",
     "description": "",
     "eventType": "exclusive",
     "carouselImageId": "40",
+    "status": "active",
     "createdOn": "20-05-2021 00:00",
     "updatedOn": "20-05-2021 00:00"
   },
@@ -16,6 +17,7 @@ export const eventPromoData: object[] = convertToJsObj([
     "description": "",
     "eventType": "exclusive",
     "carouselImageId": "41",
+    "status": "active",
     "createdOn": "20-05-2021 00:00",
     "updatedOn": "20-05-2021 00:00"
   },
@@ -25,6 +27,7 @@ export const eventPromoData: object[] = convertToJsObj([
     "description": "",
     "eventType": "exclusive",
     "carouselImageId": "41",
+    "status": "active",
     "createdOn": "20-05-2021 00:00",
     "updatedOn": "20-05-2021 00:00"
   }

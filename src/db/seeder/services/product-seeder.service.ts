@@ -118,10 +118,10 @@ export class ProductSeederService {
             const allPromises = inventoryData.map(inventory => {
                 const newInventory = new Inventory();
                 newInventory.id = parseInt(inventory.id);
-                newInventory.costPrice = parseFloat(inventory.costPrice);
-                newInventory.retailPrice = parseFloat(inventory.retailPrice);
-                newInventory.initialStock = parseInt(inventory.initialStock);
-                newInventory.itemsLeft = parseInt(inventory.itemsLeft);
+                newInventory.costPrice = parseFloat(inventory.costPrice) || 0;
+                newInventory.retailPrice = parseFloat(inventory.retailPrice) || 0;
+                newInventory.initialStock = parseInt(inventory.initialStock) || 0;
+                newInventory.itemsLeft = parseInt(inventory.itemsLeft) || 0;
 
                 return this.inventoryRepository.save(newInventory);
             });

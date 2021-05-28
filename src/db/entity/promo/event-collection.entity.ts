@@ -14,21 +14,21 @@ export class EventCollection {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
-    @Column({ type: "int", unsigned: true })
+    @Column({ type: "int", unsigned: true, unique: false })
     eventPromoId: number;
-    
-    @OneToOne(() => EventPromo, promo => promo.eventCollection)
-    @JoinColumn({name: "eventPromoId"})
+
+    @ManyToOne(() => EventPromo, promo => promo.eventCollection)
+    @JoinColumn({ name: "eventPromoId" })
     eventPromo: EventPromo;
 
-    @Column({type: "enum", enum: EventProductStatusEnum, default: EventProductStatusEnum.active})
+    @Column({ type: "enum", enum: EventProductStatusEnum, default: EventProductStatusEnum.active })
     status: EventProductStatusEnum;
 
-    @Column({ type: "int", unsigned: true })
+    @Column({ type: "int", unsigned: true, unique: false })
     productId: number;
 
     @ManyToOne(() => Product)
-    @JoinColumn({name: "productId"})
+    @JoinColumn({ name: "productId" })
     products: Product[];
 
 

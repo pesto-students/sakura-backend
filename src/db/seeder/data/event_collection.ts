@@ -1,6 +1,6 @@
 import { convertToJsObj } from "./common";
 
-export const eventCollectionData: object[] = convertToJsObj([
+export const eventCollectionData: any[] = convertToJsObj([
   {
     "id": "1",
     "eventPromoId": "1",

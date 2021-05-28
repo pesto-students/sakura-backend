@@ -12,8 +12,8 @@ export class AppRole {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;
 
-    @Column({type: "enum", enum: RoleNameEnum, default: RoleNameEnum.customer})
-    roleName: string;
+    @Column({ type: "enum", enum: RoleNameEnum, default: RoleNameEnum.customer })
+    name: RoleNameEnum;
 
     @Column(type => LoggerModel)
     logger: LoggerModel;
