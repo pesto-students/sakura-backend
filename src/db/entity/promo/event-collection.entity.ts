@@ -1,6 +1,7 @@
 import { Column, Entity, JoinColumn, ManyToOne, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
 import { Product } from "../product/product.entity";
+import { Discount } from "./discount.entity";
 import { EventPromo } from "./event-promo.entity";
 
 
@@ -29,11 +30,14 @@ export class EventCollection {
 
     @ManyToOne(() => Product)
     @JoinColumn({ name: "productId" })
-    products: Product[];
-
+    product: Product[];
 
     @Column({ type: "int", unsigned: true })
     discountId: number;
+
+    @ManyToOne(() => Discount)
+    @JoinColumn({ name: "discountId" })
+    discount: Discount;
 
     @Column(type => LoggerModel)
     logger: LoggerModel;

@@ -14,7 +14,8 @@ const ormConfig = {
     "cli": {
         "migrationsDir": join("src", "db", "migrations"),
     },
-    "synchronize": false
+    "synchronize": false,
+    "logging": true
 }
 
 export default ormConfig;

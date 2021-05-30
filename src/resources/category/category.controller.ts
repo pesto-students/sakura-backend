@@ -9,9 +9,9 @@ export class CategoryController {
 
     @Get()
     @ApiQuery({ name: 'match', required: false })
-    getAllCategories(@Query("match") matchString: string) {
+    searchCategoriesByKey(@Query("match") matchString: string) {
         try {
-            return this.categoryService.getAllCategories(matchString);
+            return this.categoryService.searchCategoriesByKey(matchString);
         } catch (error) {
             //TODO: Need to handle error types
             throw new HttpException({

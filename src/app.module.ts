@@ -8,6 +8,8 @@ import ormConfig from "../ormconfig";
 import { SeederModule } from './db/seeder/seeder.module';
 import { join } from 'path';
 import { AppSettingModule } from './resources/app-setting/app-setting.module';
+import { PromoModule } from './resources/promo/promo.module';
+import { SubCategoryModule } from './resources/sub-category/sub-category.module';
 
 const ormConfigModified = Object.assign({},
   ormConfig,
@@ -22,7 +24,9 @@ const ormConfigModified = Object.assign({},
 @Module({
   imports: [ProductModule, CategoryModule,
     CampaignModule, EventPromoModule, SeederModule,
-    AppSettingModule, TypeOrmModule.forRoot(ormConfigModified as any)
+    AppSettingModule, PromoModule,
+    SubCategoryModule,
+    TypeOrmModule.forRoot(ormConfigModified as any)
   ],
   controllers: [],
   providers: [],

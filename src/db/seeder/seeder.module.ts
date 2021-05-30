@@ -31,6 +31,6 @@ const entities = [AppUser, AppRole, AppSetting, City, State, PublicAsset,
 @Module({
     providers: [SeederService, AppSettingSeederService, CityStateSeederService, ProductSeederService, PromoSeederService, AppUserSeederService],
     imports: [TypeOrmModule.forFeature(entities)],
-    exports: [TypeOrmModule, SeederService]
+    exports: [SeederService]
 })
 export class SeederModule { }
