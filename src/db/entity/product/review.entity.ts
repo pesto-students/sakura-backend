@@ -16,7 +16,7 @@ export class Review {
     @Column({ type: "varchar", length: 50 })
     name: string;
 
-    @Column({ type: "varchar", length: 500 })
+    @Column({ type: "longtext" })
     description: string;
 
     @Column({ type: "tinyint", unsigned: true })

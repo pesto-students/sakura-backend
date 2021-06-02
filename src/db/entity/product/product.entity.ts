@@ -1,5 +1,6 @@
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { LoggerModel } from "../logger.model";
+import { EventCollection } from "../promo/event-collection.entity";
 import { Favorite } from "./favorite.entity";
 import { Inventory } from "./inventory.entity";
 import { ProductAsset } from "./product-asset.entity";
@@ -47,6 +48,9 @@ export class Product {
     @OneToOne(() => Inventory)
     @JoinColumn({ name: "inventoryId" })
     inventory: Inventory;
+
+    @OneToMany(() => EventCollection, eventCollection => eventCollection.product)
+    eventCollection: EventCollection[];
 
     @OneToMany(() => Favorite, favorite => favorite.product)
     favorites: Favorite[];

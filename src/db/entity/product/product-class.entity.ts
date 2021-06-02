@@ -18,7 +18,7 @@ export class ProductClass {
     @Column({ type: "varchar", length: 30 })
     name: string;
 
-    @Column({ type: "varchar", length: 500 })
+    @Column({ type: "longtext" })
     description: string;
 
     @Column({ type: "varchar", length: 30 })

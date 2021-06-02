@@ -25,9 +25,11 @@ export class ProductController {
 
     @Get(":id")
     @ApiParam({ name: "id", required: true })
-    getProductById(@Param('id') productId: number) {
+    @ApiQuery({ name: 'discountId', required: false })
+    getProductById(@Param('id') productId: number, @Query("discountId") discountId: string) {
         try {
-            return this.productService.getProductById(productId);
+            const parsedDiscountId = discountId ? parseInt(discountId) : undefined;
+            return this.productService.getProductById(productId, parsedDiscountId);
         } catch (error) {
             //TODO: Need to handle error types
             throw new HttpException({

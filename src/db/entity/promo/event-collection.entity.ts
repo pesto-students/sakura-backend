@@ -1,4 +1,4 @@
-import { Column, Entity, JoinColumn, ManyToOne, OneToOne, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, OneToOne, PrimaryGeneratedColumn, Unique } from "typeorm";
 import { LoggerModel } from "../logger.model";
 import { Product } from "../product/product.entity";
 import { Discount } from "./discount.entity";
@@ -11,6 +11,7 @@ export enum EventProductStatusEnum {
 }
 
 @Entity("event_collection")
+@Unique("UQ_CAMPAIGN", ["productId", "discountId"])
 export class EventCollection {
     @PrimaryGeneratedColumn({ type: "int", unsigned: true })
     id: number;

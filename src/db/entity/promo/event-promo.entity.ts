@@ -22,7 +22,7 @@ export class EventPromo {
     @Column({ type: "varchar", length: 45 })
     name: string;
 
-    @Column({ type: "varchar", length: 200 })
+    @Column({ type: "longtext" })
     description: string;
 
     @Column({ type: "enum", enum: EventPromoStatusEnum, default: EventPromoStatusEnum.active })

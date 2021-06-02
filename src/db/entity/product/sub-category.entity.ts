@@ -19,7 +19,7 @@ export class SubCategory {
     @Column({ type: "varchar", length: 80 })
     name: string;
 
-    @Column({ type: "varchar", length: 150 })
+    @Column({ type: "longtext" })
     description: string;
 
     @OneToMany(() => ProductClass, productClass => productClass.subCategory)

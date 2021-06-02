@@ -12,7 +12,7 @@ export class ProductAsset {
     @Column({ type: "varchar", length: 80 })
     name: string;
 
-    @Column({ type: "varchar", length: 200 })
+    @Column({ type: "longtext" })
     description: string;
 
     @Column({ type: "int", unsigned: true })

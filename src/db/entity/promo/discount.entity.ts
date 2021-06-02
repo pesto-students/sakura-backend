@@ -18,7 +18,7 @@ export class Discount {
     @Column({ type: "varchar", length: 10 })
     coupon: string;
 
-    @Column({ type: "varchar", length: 150 })
+    @Column({ type: "longtext" })
     description: string;
 
     @Column({ type: "enum", enum: DiscountStatusEnum, default: DiscountStatusEnum.active })
