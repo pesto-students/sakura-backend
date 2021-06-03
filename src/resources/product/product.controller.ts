@@ -26,10 +26,26 @@ export class ProductController {
     @Get(":id")
     @ApiParam({ name: "id", required: true })
     @ApiQuery({ name: 'discountId', required: false })
-    getProductById(@Param('id') productId: number, @Query("discountId") discountId: string) {
+    getProductById(@Param('id') productId: string, @Query("discountId") discountId: string) {
         try {
+            const parsedProductId = parseInt(productId);
             const parsedDiscountId = discountId ? parseInt(discountId) : undefined;
-            return this.productService.getProductById(productId, parsedDiscountId);
+            return this.productService.getProductById(parsedProductId, parsedDiscountId);
+        } catch (error) {
+            //TODO: Need to handle error types
+            throw new HttpException({
+                message: error.message
+            }, HttpStatus.BAD_REQUEST);
+        }
+    }
+
+
+    @Get(":id/options")
+    @ApiParam({ name: "id", required: true })
+    getProductOptionsById(@Param('id') productId: string) {
+        try {
+            const parsedProductId = parseInt(productId);
+            return this.productService.getProductOptions(parsedProductId);
         } catch (error) {
             //TODO: Need to handle error types
             throw new HttpException({

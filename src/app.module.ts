@@ -1,8 +1,6 @@
 import { Module } from '@nestjs/common';
 import { ProductModule } from './resources/product/product.module';
 import { CategoryModule } from './resources/category/category.module';
-import { CampaignModule } from './resources/campaign/campaign.module'; 1
-import { EventPromoModule } from './resources/event-promo/event-promo.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import ormConfig from "../ormconfig";
 import { SeederModule } from './db/seeder/seeder.module';
@@ -23,7 +21,7 @@ const ormConfigModified = Object.assign({},
 )
 @Module({
   imports: [ProductModule, CategoryModule,
-    CampaignModule, EventPromoModule, SeederModule,
+    SeederModule,
     AppSettingModule, PromoModule,
     SubCategoryModule,
     TypeOrmModule.forRoot(ormConfigModified as any)
