@@ -8,8 +8,6 @@ plugins:
 provider:
   name: aws
   runtime: nodejs14.x
-  stage: ${opt:stage, 'testing'}
-  region: ${opt:region, 'ap-south-1'}
   apiGateway:
     shouldStartNameWithService: true
 
