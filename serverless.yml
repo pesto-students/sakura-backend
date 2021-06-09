@@ -2,23 +2,22 @@ service:
   name: sakura-backend
 
 plugins:
-  - 'serverless-plugin-typescript'
   - serverless-plugin-optimize
   - serverless-offline
 
 provider:
   name: aws
   runtime: nodejs14.x
+  stage: ${opt:stage, 'testing'}
+  region: ${opt:region, 'ap-south-1'}
+  apiGateway:
+    shouldStartNameWithService: true
 
 functions:
   main: # The name of the lambda function
     # The module 'handler' is exported in the file 'src/lambda'
     handler: src/lambda.handler
     events:
-      - http:
-          method: ANY
-          path: /
-          cors: true
       - http:
           method: any
           path: /{proxy+}
@@ -27,3 +26,7 @@ functions:
 custom:
   serverless-offline:
     noPrependStageInUrl: true
+  optimize:
+    external: ['swagger-ui-dist']
+    externalPaths:
+      swagger-ui-dist: '../node_modules/swagger-ui-dist'

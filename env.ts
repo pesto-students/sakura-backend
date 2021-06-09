@@ -26,3 +26,8 @@ export const DB_NAME = process.env["DB_NAME"];
 
 
 
+// Lambda configs
+export const LAMBDA_STAGING = process.env["LAMBDA_STAGING"] || "testing";
+
+
+

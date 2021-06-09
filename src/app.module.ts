@@ -8,11 +8,12 @@ import { join } from 'path';
 import { AppSettingModule } from './resources/app-setting/app-setting.module';
 import { PromoModule } from './resources/promo/promo.module';
 import { SubCategoryModule } from './resources/sub-category/sub-category.module';
+import entities from './db/entity';
 
 const ormConfigModified = Object.assign({},
   ormConfig,
   {
-    entities: [join(__dirname, "db", "entity", "**", "*.entity{.ts,.js}")],
+    entities: [...entities],
     migrations: [join(__dirname, "db", "migrations", "**", "*.entity{.ts,.js}")],
     cli: {
       migrationsDir: join(__dirname, "db", "migrations")
