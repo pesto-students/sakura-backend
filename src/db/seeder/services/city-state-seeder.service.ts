@@ -25,6 +25,7 @@ export class CityStateSeederService {
                 return this.stateRepository.save(newState);
             });
             await Promise.all(allPromises);
+            console.log("seeded state");
             return true;
         } catch (error) {
             console.log(error);
@@ -43,6 +44,7 @@ export class CityStateSeederService {
                 return this.cityRepository.save(newCity);
             });
             await Promise.all(allPromises);
+            console.log("seeded city");
             return true;
         } catch (error) {
             console.log(error);

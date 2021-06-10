@@ -46,6 +46,7 @@ export class ProductSeederService {
                 return this.categoryRepository.save(newCategory);
             });
             await Promise.all(allPromises);
+            console.log("seeded category");
             return true;
         } catch (error) {
             console.log(error);
@@ -64,6 +65,7 @@ export class ProductSeederService {
                 return this.subCategoryRepository.save(newSubCategory);
             });
             await Promise.all(allPromises);
+            console.log("seeded subcategory");
             return true;
         } catch (error) {
             console.log(error);
@@ -86,6 +88,7 @@ export class ProductSeederService {
                 return this.productClassRepository.save(newProductClass);
             });
             await Promise.all(allPromises);
+            console.log("seeded productClass");
             return true;
         } catch (error) {
             console.log(error);
@@ -106,6 +109,7 @@ export class ProductSeederService {
                 return this.publicAssetRepository.save(newPublicAsset);
             });
             await Promise.all(allPromises);
+            console.log("seeded publicAsset");
             return true;
         } catch (error) {
             console.log(error);
@@ -126,6 +130,7 @@ export class ProductSeederService {
                 return this.inventoryRepository.save(newInventory);
             });
             await Promise.all(allPromises);
+            console.log("seeded inventory");
             return true;
         } catch (error) {
             console.log(error);
@@ -150,6 +155,7 @@ export class ProductSeederService {
                 return this.productRepository.save(newProduct);
             });
             await Promise.all(allPromises);
+            console.log("seeded product");
             return true;
         } catch (error) {
             console.log(error);
@@ -171,6 +177,7 @@ export class ProductSeederService {
                 return this.productAssetRepository.save(newProductAsset);
             });
             await Promise.all(allPromises);
+            console.log("seeded productAsset");
             return true;
         } catch (error) {
             console.log(error);

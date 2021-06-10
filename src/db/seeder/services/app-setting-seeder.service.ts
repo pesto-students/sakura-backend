@@ -41,6 +41,7 @@ export class AppSettingSeederService {
                 isSeeded: true
             } as SeedState;
             this.appSettingRepository.save(seedState);
+            console.log("seeding complete");
             return true;
         } catch (error) {
             console.log(error);

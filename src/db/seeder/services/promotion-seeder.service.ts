@@ -35,6 +35,7 @@ export class PromoSeederService {
                 return this.eventPromoRepository.save(newEventPromo);
             });
             await Promise.all(allPromises);
+            console.log("seeded eventPromo");
             return true;
         } catch (error) {
             console.log(error);
@@ -58,6 +59,7 @@ export class PromoSeederService {
                 return this.discountRepository.save(newDiscount);
             });
             await Promise.all(allPromises);
+            console.log("seeded discount");
             return true;
         } catch (error) {
             console.log(error);
@@ -79,6 +81,7 @@ export class PromoSeederService {
                 return this.eventCollectionRepository.save(newEventCollection);
             });
             await Promise.all(allPromises);
+            console.log("seeded eventCollection");
             return true;
         } catch (error) {
             console.log(error);
